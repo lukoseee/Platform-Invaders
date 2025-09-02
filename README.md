@@ -42,11 +42,4 @@ My role in the project was as a **Windows-specific developer**, focusing on:
 - **C++17** (or newer)
 
 ### Installation
-- Git clone and build using respective IDEs. 
-
-
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/your-repo.git
+- Git clone and build using respective IDEs.
