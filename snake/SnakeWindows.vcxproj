@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{7bf6e2de-a486-4169-a254-b765ceadcd86}</ProjectGuid>
+    <RootNamespace>SnakeWindows</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>false</EnableASAN>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /E /I /Y "..\snake\snake\Assets" "$(TargetDir)Assets"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="snake\GameLayer\Apple\apple.cpp" />
+    <ClCompile Include="snake\GameLayer\controller.cpp" />
+    <ClCompile Include="snake\GameLayer\GameManager\gameManager.cpp" />
+    <ClCompile Include="snake\GameLayer\LeaderboardManager\leaderboardManager.cpp" />
+    <ClCompile Include="snake\GameLayer\main.cpp" />
+    <ClCompile Include="snake\GameLayer\MainMenuManager\mainMenuManager.cpp" />
+    <ClCompile Include="snake\GameLayer\Renderer\renderer.cpp" />
+    <ClCompile Include="snake\GameLayer\ScoreManager\scoreManager.cpp" />
+    <ClCompile Include="snake\GameLayer\Snake\snake.cpp" />
+    <ClCompile Include="snake\GameLayer\Util\util.cpp" />
+    <ClCompile Include="snake\Library\AbstractionLayer\Util\AudioInfo.cpp" />
+    <ClCompile Include="snake\Library\AbstractionLayer\Util\ImageInfo.cpp" />
+    <ClCompile Include="snake\Library\OS_SpecificCode\WINDOWS\Audio\D2dAudio.cpp" />
+    <ClCompile Include="snake\Library\OS_SpecificCode\WINDOWS\ClockManager\WindowsClockManager.cpp" />
+    <ClCompile Include="snake\Library\OS_SpecificCode\WINDOWS\ResourceManager\WindowsResourceManager.cpp" />
+    <ClCompile Include="snake\Library\OS_SpecificCode\WINDOWS\UserInput\WindowsUserInputManager.cpp" />
+    <ClCompile Include="snake\Library\OS_SpecificCode\WINDOWS\Visuals\D2dRenderer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\Alphabet\A.png" />
+    <Image Include="assets\Alphabet\B.png" />
+    <Image Include="assets\Alphabet\C.png" />
+    <Image Include="assets\Alphabet\colon.png" />
+    <Image Include="assets\Alphabet\D.png" />
+    <Image Include="assets\Alphabet\E.png" />
+    <Image Include="assets\Alphabet\exclaim_mark.png" />
+    <Image Include="assets\Alphabet\F.png" />
+    <Image Include="assets\Alphabet\G.png" />
+    <Image Include="assets\Alphabet\H.png" />
+    <Image Include="assets\Alphabet\I.png" />
+    <Image Include="assets\Alphabet\J.png" />
+    <Image Include="assets\Alphabet\K.png" />
+    <Image Include="assets\Alphabet\L.png" />
+    <Image Include="assets\Alphabet\M.png" />
+    <Image Include="assets\Alphabet\N.png" />
+    <Image Include="assets\Alphabet\O.png" />
+    <Image Include="assets\Alphabet\P.png" />
+    <Image Include="assets\Alphabet\Q.png" />
+    <Image Include="assets\Alphabet\question_mark.png" />
+    <Image Include="assets\Alphabet\R.png" />
+    <Image Include="assets\Alphabet\S.png" />
+    <Image Include="assets\Alphabet\T.png" />
+    <Image Include="assets\Alphabet\U.png" />
+    <Image Include="assets\Alphabet\V.png" />
+    <Image Include="assets\Alphabet\W.png" />
+    <Image Include="assets\Alphabet\X.png" />
+    <Image Include="assets\Alphabet\Y.png" />
+    <Image Include="assets\Alphabet\Z.png" />
+    <Image Include="assets\background.png" />
+    <Image Include="assets\Entities\Apple.png" />
+    <Image Include="assets\Entities\Snake.png" />
+    <Image Include="assets\Entities\Snake_Death_1.png" />
+    <Image Include="assets\Entities\Snake_Death_2.png" />
+    <Image Include="assets\Entities\Snake_Death_3.png" />
+    <Image Include="assets\Entities\Snake_Head_DOWN.png" />
+    <Image Include="assets\Entities\Snake_Head_LEFT.png" />
+    <Image Include="assets\Entities\Snake_Head_RIGHT.png" />
+    <Image Include="assets\Entities\Snake_Head_UP.png" />
+    <Image Include="assets\game_over_hud.png" />
+    <Image Include="assets\leaderboard_screen.png" />
+    <Image Include="assets\main_menu.png" />
+    <Image Include="assets\Numbers\0.png" />
+    <Image Include="assets\Numbers\1.png" />
+    <Image Include="assets\Numbers\2.png" />
+    <Image Include="assets\Numbers\3.png" />
+    <Image Include="assets\Numbers\4.png" />
+    <Image Include="assets\Numbers\5.png" />
+    <Image Include="assets\Numbers\6.png" />
+    <Image Include="assets\Numbers\7.png" />
+    <Image Include="assets\Numbers\8.png" />
+    <Image Include="assets\Numbers\9.png" />
+    <Image Include="assets\quit_bar.png" />
+    <Image Include="assets\scores_bar.png" />
+    <Image Include="assets\score_header.png" />
+    <Image Include="assets\start_bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\scores.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\Audio\Collect_SFX.wav" />
+    <Media Include="assets\Audio\Death_SFX.wav" />
+    <Media Include="assets\Audio\Game_Music.wav" />
+    <Media Include="assets\Audio\Menu_Music.wav" />
+    <Media Include="assets\Audio\Select_SFX.wav" />
+    <Media Include="assets\Audio\Start_SFX.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="snake\GameLayer\Apple\apple.hpp" />
+    <ClInclude Include="snake\GameLayer\constants.hpp" />
+    <ClInclude Include="snake\GameLayer\controller.hpp" />
+    <ClInclude Include="snake\GameLayer\GameManager\gameManager.hpp" />
+    <ClInclude Include="snake\GameLayer\guiManagerInterface.hpp" />
+    <ClInclude Include="snake\GameLayer\LeaderboardManager\leaderboardManager.hpp" />
+    <ClInclude Include="snake\GameLayer\MainMenuManager\mainMenuManager.hpp" />
+    <ClInclude Include="snake\GameLayer\Renderer\renderer.hpp" />
+    <ClInclude Include="snake\GameLayer\ScoreManager\scoreManager.hpp" />
+    <ClInclude Include="snake\GameLayer\Snake\snake.hpp" />
+    <ClInclude Include="snake\GameLayer\Util\util.hpp" />
+    <ClInclude Include="snake\Library\AbstractionLayer\OtherInterfaces\AudioRendererInterface.hpp" />
+    <ClInclude Include="snake\Library\AbstractionLayer\OtherInterfaces\ClockManagerInterface.hpp" />
+    <ClInclude Include="snake\Library\AbstractionLayer\OtherInterfaces\ResourceManagerInterface.hpp" />
+    <ClInclude Include="snake\Library\AbstractionLayer\OtherInterfaces\UserInputManagerInterface.hpp" />
+    <ClInclude Include="snake\Library\AbstractionLayer\OtherInterfaces\VisualRendererInterface.hpp" />
+    <ClInclude Include="snake\Library\AbstractionLayer\PlatformInterface\PlatformInterface.hpp" />
+    <ClInclude Include="snake\Library\AbstractionLayer\Util\AudioInfo.hpp" />
+    <ClInclude Include="snake\Library\AbstractionLayer\Util\ImageInfo.hpp" />
+    <ClInclude Include="snake\Library\OS_SpecificCode\WINDOWS\Audio\D2dAudio.hpp" />
+    <ClInclude Include="snake\Library\OS_SpecificCode\WINDOWS\ClockManager\WindowsClockManager.hpp" />
+    <ClInclude Include="snake\Library\OS_SpecificCode\WINDOWS\ResourceManager\WindowsResourceManager.hpp" />
+    <ClInclude Include="snake\Library\OS_SpecificCode\WINDOWS\UserInput\WindowsUserInputManager.hpp" />
+    <ClInclude Include="snake\Library\OS_SpecificCode\WINDOWS\Visuals\D2dRenderer.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="snake\Library\AbstractionLayer\PlatformInterface\PlatformInterface.mm">
+      <FileType>Document</FileType>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

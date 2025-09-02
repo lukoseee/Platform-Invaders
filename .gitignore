@@ -1,0 +1,68 @@
+# ========== OS-specific ==========
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ========== C++ Build Artifacts ==========
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.class
+*.pch
+*.pdb
+*.idb
+
+# ========== Visual Studio ==========
+.vs/
+*.vcxproj.user
+*.suo
+*.ncb
+*.aps
+*.opensdf
+*.sdf
+*.ipch
+*.dbmdl
+*.cache
+*.log
+*.tlog
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+# ========== CMake ==========
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+out/
+
+# ========== IDE / Editors ==========
+# VS Code
+.vscode/
+
+# Xcode (if you ever open on macOS with Xcode)
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata
+
+# ========== Misc ==========
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store

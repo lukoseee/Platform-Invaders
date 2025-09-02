@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Paddle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\OS_SpecificCode\WINDOWS\Audio\D2dAudio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\OS_SpecificCode\WINDOWS\ClockManager\WindowsClockManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\OS_SpecificCode\WINDOWS\ResourceManager\WindowsResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\OS_SpecificCode\WINDOWS\UserInput\WindowsUserInputManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\OS_SpecificCode\WINDOWS\Visuals\D2dRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\AbstractionLayer\PlatformInterface\PlatformInterface.mm" />
+    <ClCompile Include="ScoreManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\AbstractionLayer\Util\AudioInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\AbstractionLayer\Util\ImageInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\OneDrive\Documents\mylib\Include\Queue.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameController.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\AbstractionLayer\OtherInterfaces\AudioRendererInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\AbstractionLayer\OtherInterfaces\ClockManagerInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\AbstractionLayer\OtherInterfaces\ResourceManagerInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\AbstractionLayer\OtherInterfaces\UserInputManagerInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\AbstractionLayer\OtherInterfaces\VisualRendererInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\AbstractionLayer\PlatformInterface\PlatformInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\OS_SpecificCode\WINDOWS\Audio\D2dAudio.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\OS_SpecificCode\WINDOWS\ClockManager\WindowsClockManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\OS_SpecificCode\WINDOWS\ResourceManager\WindowsResourceManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\OS_SpecificCode\WINDOWS\UserInput\WindowsUserInputManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\OS_SpecificCode\WINDOWS\Visuals\D2dRenderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\AbstractionLayer\Util\AudioInfo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\AbstractionLayer\Util\ImageInfo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\Ball.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Computer.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Player.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Board.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\ScoreBar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\StartMessage.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\ScoreBarRight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\EndMsg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Player1Wins.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Player2Wins.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\hit.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

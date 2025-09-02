@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="snake\GameLayer\Apple\apple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\GameLayer\controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\GameLayer\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\GameLayer\GameManager\gameManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\GameLayer\LeaderboardManager\leaderboardManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\GameLayer\MainMenuManager\mainMenuManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\GameLayer\Renderer\renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\GameLayer\ScoreManager\scoreManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\GameLayer\Snake\snake.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\GameLayer\Util\util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\Library\OS_SpecificCode\WINDOWS\Audio\D2dAudio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\Library\OS_SpecificCode\WINDOWS\ClockManager\WindowsClockManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\Library\OS_SpecificCode\WINDOWS\ResourceManager\WindowsResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\Library\OS_SpecificCode\WINDOWS\UserInput\WindowsUserInputManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\Library\OS_SpecificCode\WINDOWS\Visuals\D2dRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\Library\AbstractionLayer\PlatformInterface\PlatformInterface.mm" />
+    <ClCompile Include="snake\Library\AbstractionLayer\Util\AudioInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snake\Library\AbstractionLayer\Util\ImageInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\game_over_hud.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\leaderboard_screen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\main_menu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\quit_bar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\score_header.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\scores_bar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\start_bar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\A.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\B.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\C.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\colon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\D.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\E.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\exclaim_mark.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\F.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\G.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\H.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\I.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\J.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\K.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\L.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\M.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\N.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\O.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\P.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\Q.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\question_mark.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\R.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\S.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\T.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\U.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\V.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\W.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\X.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\Y.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Alphabet\Z.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Entities\Apple.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Entities\Snake.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Entities\Snake_Death_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Entities\Snake_Death_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Entities\Snake_Death_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Entities\Snake_Head_DOWN.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Entities\Snake_Head_LEFT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Entities\Snake_Head_RIGHT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Entities\Snake_Head_UP.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\Numbers\9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\scores.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\Audio\Collect_SFX.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="assets\Audio\Death_SFX.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="assets\Audio\Game_Music.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="assets\Audio\Menu_Music.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="assets\Audio\Select_SFX.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="assets\Audio\Start_SFX.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="snake\GameLayer\Apple\apple.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\GameLayer\constants.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\GameLayer\controller.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\GameLayer\guiManagerInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\GameLayer\GameManager\gameManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\GameLayer\LeaderboardManager\leaderboardManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\GameLayer\MainMenuManager\mainMenuManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\GameLayer\Renderer\renderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\GameLayer\ScoreManager\scoreManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\GameLayer\Snake\snake.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\GameLayer\Util\util.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\AbstractionLayer\OtherInterfaces\AudioRendererInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\AbstractionLayer\OtherInterfaces\ClockManagerInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\AbstractionLayer\OtherInterfaces\ResourceManagerInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\AbstractionLayer\OtherInterfaces\UserInputManagerInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\AbstractionLayer\OtherInterfaces\VisualRendererInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\AbstractionLayer\PlatformInterface\PlatformInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\OS_SpecificCode\WINDOWS\Audio\D2dAudio.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\OS_SpecificCode\WINDOWS\ClockManager\WindowsClockManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\OS_SpecificCode\WINDOWS\ResourceManager\WindowsResourceManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\OS_SpecificCode\WINDOWS\UserInput\WindowsUserInputManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\OS_SpecificCode\WINDOWS\Visuals\D2dRenderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\AbstractionLayer\Util\AudioInfo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snake\Library\AbstractionLayer\Util\ImageInfo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

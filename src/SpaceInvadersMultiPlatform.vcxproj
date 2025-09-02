@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{93c012c1-ff7b-405e-a764-ef768b3932db}</ProjectGuid>
+    <RootNamespace>SpaceInvadersMultiPlatform</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /E /I /Y "..\src\assets" "$(TargetDir)assets"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="main\AbstractionLayer\ClockManagerInterface.hpp" />
+    <ClInclude Include="main\AbstractionLayer\HardwareInterface.hpp" />
+    <ClInclude Include="main\AbstractionLayer\OtherInterfaces\AudioRendererInterface.hpp" />
+    <ClInclude Include="main\AbstractionLayer\OtherInterfaces\ClockManagerInterface.hpp" />
+    <ClInclude Include="main\AbstractionLayer\OtherInterfaces\ResourceManagerInterface.hpp" />
+    <ClInclude Include="main\AbstractionLayer\OtherInterfaces\UserInputManagerInterface.hpp" />
+    <ClInclude Include="main\AbstractionLayer\OtherInterfaces\VisualRendererInterface.hpp" />
+    <ClInclude Include="main\AbstractionLayer\PlatformInterface\PlatformInterface.hpp" />
+    <ClInclude Include="main\AbstractionLayer\Util\AudioInfo.hpp" />
+    <ClInclude Include="main\AbstractionLayer\Util\ImageInfo.hpp" />
+    <ClInclude Include="main\OS_SpecificCode\WINDOWS\Audio\D2dAudio.hpp" />
+    <ClInclude Include="main\OS_SpecificCode\WINDOWS\ClockManager\WindowsClockManager.hpp">
+      <DeploymentContent>true</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="main\OS_SpecificCode\WINDOWS\D2dAudio.hpp" />
+    <ClInclude Include="main\OS_SpecificCode\WINDOWS\D2dRenderer.hpp" />
+    <ClInclude Include="main\OS_SpecificCode\WINDOWS\ResourceManager\WindowsResourceManager.hpp">
+      <DeploymentContent>true</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="main\OS_SpecificCode\WINDOWS\UserInput\WindowsUserInputManager.hpp" />
+    <ClInclude Include="main\OS_SpecificCode\WINDOWS\Visuals\D2dRenderer.hpp" />
+    <ClInclude Include="main\OS_SpecificCode\WINDOWS\WindowsRenderer.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Constants.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Controller.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\GameOver\GameOverController.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\Bullets\Bullet.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\Bullets\BulletManager.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\Enemies\Enemy.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\Enemies\EnemyBase.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\Enemies\EnemyManager.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\Enemies\RedEnemy.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\Entity.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\GameController.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\GameManagerInterface.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\Lives\LivesManager.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\Player\Player.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\Score\ScoreManager.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\Shields\Shield.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Game\Shields\ShieldManager.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\GUIInterface.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\GUIState.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Leaderboard\LeaderboardController.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\Menu\MenuController.hpp" />
+    <ClInclude Include="main\PlatformAgnostic_GameLayer\RedEnemy.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main\AbstractionLayer\Util\AudioInfo.cpp" />
+    <ClCompile Include="main\AbstractionLayer\Util\ImageInfo.cpp" />
+    <ClCompile Include="main\OS_SpecificCode\WINDOWS\Audio\D2dAudio.cpp" />
+    <ClCompile Include="main\OS_SpecificCode\WINDOWS\ClockManager\WindowsClockManager.cpp" />
+    <ClCompile Include="main\OS_SpecificCode\WINDOWS\ResourceManager\WindowsResourceManager.cpp">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="main\OS_SpecificCode\WINDOWS\UserInput\WindowsUserInputManager.cpp" />
+    <ClCompile Include="main\OS_SpecificCode\WINDOWS\Visuals\D2dRenderer.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Controller.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\GameOver\GameOverController.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\Bullets\Bullet.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\Bullets\BulletManager.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\Enemies\Enemy.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\Enemies\EnemyBase.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\Enemies\EnemyManager.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\Enemies\RedEnemy.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\Entity.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\GameController.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\Lives\LivesManager.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\Player\Player.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\Score\ScoreManager.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\Shields\Shield.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Game\Shields\ShieldManager.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Leaderboard\LeaderboardController.cpp" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\main.cpp" />
+    <ClCompile Include="main\AbstractionLayer\PlatformInterface\PlatformInterface.mm" />
+    <ClCompile Include="main\PlatformAgnostic_GameLayer\Menu\MenuController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\space_invader.png" />
+    <Image Include="assets\sprites\0_bullet_sprite.png" />
+    <Image Include="assets\sprites\0_enemy_sprite.png" />
+    <Image Include="assets\sprites\0_player_sprite.png" />
+    <Image Include="assets\sprites\0_red_enemy.png" />
+    <Image Include="assets\sprites\0_shield_spirte_upperright.png" />
+    <Image Include="assets\sprites\0_shield_sprite_lowerleft.png" />
+    <Image Include="assets\sprites\0_shield_sprite_lowerright.png" />
+    <Image Include="assets\sprites\0_shield_sprite_square.png" />
+    <Image Include="assets\sprites\0_shield_sprite_upperleft.png" />
+    <Image Include="assets\sprites\1_enemy_sprite.png" />
+    <Image Include="assets\sprites\1_shield_spirte_upperright.png" />
+    <Image Include="assets\sprites\1_shield_sprite_lowerleft.png" />
+    <Image Include="assets\sprites\1_shield_sprite_lowerright.png" />
+    <Image Include="assets\sprites\1_shield_sprite_square.png" />
+    <Image Include="assets\sprites\1_shield_sprite_upperleft.png" />
+    <Image Include="assets\sprites\2_enemy_sprite.png" />
+    <Image Include="assets\sprites\2_shield_spirte_upperright.png" />
+    <Image Include="assets\sprites\2_shield_sprite_lowerleft.png" />
+    <Image Include="assets\sprites\2_shield_sprite_lowerright.png" />
+    <Image Include="assets\sprites\2_shield_sprite_square.png" />
+    <Image Include="assets\sprites\2_shield_sprite_upperleft.png" />
+    <Image Include="assets\sprites\3_enemy_sprite.png" />
+    <Image Include="assets\sprites\3_shield_spirte_upperright.png" />
+    <Image Include="assets\sprites\3_shield_sprite_lowerleft.png" />
+    <Image Include="assets\sprites\3_shield_sprite_lowerright.png" />
+    <Image Include="assets\sprites\3_shield_sprite_square.png" />
+    <Image Include="assets\sprites\3_shield_sprite_upperleft.png" />
+    <Image Include="assets\sprites\4_enemy_sprite.png" />
+    <Image Include="assets\sprites\5_enemy_sprite.png" />
+    <Image Include="assets\sprites\6_enemy_sprite.png" />
+    <Image Include="assets\sprites\explosion.png" />
+    <Image Include="assets\sprites\red_enemy.png" />
+    <Image Include="main\assets\space_invader.png" />
+    <Image Include="main\assets\sprites\0_player_sprite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\info.md" />
+    <None Include="run" />
+    <None Include="x64\Debug\SpaceInvadersMultiPlatform.exe" />
+    <None Include="x64\Debug\SpaceInvadersMultiPlatform.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\sound_effect.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
